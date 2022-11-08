@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="HomeworkHTML" />
         <module name="PracticeHTML" />
+        <module name="PoppysProfile" />
       </profile>
     </annotationProcessing>
   </component>
