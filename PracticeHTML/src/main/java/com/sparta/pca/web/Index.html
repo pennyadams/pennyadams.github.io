@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content = "P. Beans">
+    <meta name = "description" content = "This is a webpage">
+    <title>My Profile</title>
+    <link href="profileStyle.css" rel="stylesheet" />
+
+</head>
+<body>
+<main>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Go to Profile</a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank">My LinkedIn</a></li>
+            </ul>
+        </nav>
+        <h2>Poppy's Profile</h2>
+        <div class="flex-container">
+            <section class="rcorners2">
+                <h4>Poppy's Skills</h4>
+                <ul>
+                    <li><a href="sniff.html">Sniffing</a></li>
+                    <li><a href="xbox.html">Playing XBox</a></li>
+                </ul>
+            </section>
+            <section class="rcorners2">
+                <h4>Poppy's Hobbies</h4>
+                    <ul>
+                    <li><a href="sleep.html">Sleeping</a></li>
+                    <li><a href="boardGames.html">Playing Board Games</a></li>
+                    <li><a href="drinkWater.html">Drinking your water</a></li>
+                </ul>
+            </section>
+
+        </div>
+        <section class="rcorners2">
+            <h4>Goals</h4>
+            <p>Snack &#127828</p>
+        </section>
+        <h3>Poppy checks your horoscope:</h3>
+            <label for="starSearch">Star sign:</label><br>
+            <input id="starSearch" placeholder="Enter your star sign" type="text"><br>
+            <input type="button" id="button1" value="Go">
+
+        <p class="output" id="output1"></p>
+
+        <script>
+            var txt1 = document.getElementById("starSearch");
+            var btn1 = document.getElementById("button1");
+            var out1 = document.getElementById("output1");
+
+            function fun1() {
+                if (txt1.value == "Taurus") {
+                    out1.innerHTML = "Poppy says you will die a horrific death";
+                   } else if (txt1.value == "Virgo") {
+                   out1.innerHTML = "Poppy says you will come into some money at the end of this month. You will be taxed on it."
+                   } else if (txt1.value == "Aries") {
+                   out1.innerHTML = "Aries"
+                   } else if (txt1.value == "Gemini") {
+                   out1.innerHTML = "Gemini"
+                   } else if (txt1.value == "Cancer") {
+                   out1.innerHTML = "Cancer"
+                   } else if (txt1.value == "Leo") {
+                   out1.innerHTML = "Leo"
+                   } else if (txt1.value == "Libra") {
+                   out1.innerHTML = "Libra"
+                   } else if (txt1.value == "Scorpio") {
+                   out1.innerHTML = "Scorpio"
+                   } else if (txt1.value == "Sagittarius") {
+                   out1.innerHTML = "Sagittarius"
+                   } else if (txt1.value == "Capricorn") {
+                   out1.innerHTML = "Capricorn"
+                   } else if (txt1.value == "Aquarius") {
+                   out1.innerHTML = "Aquarius"
+                   } else if (txt1.value == "Pisces") {
+                   out1.innerHTML = "Pisces"
+                   } else {
+                   out1.innerText = "Invalid Star Sign" + txt1.value;
+                   }
+
+            }
+
+            btn1.addEventListener('click', fun1);
+
+        </script>
+
+
+
+    </div>
+
+</main>
+</body>
+</html>
